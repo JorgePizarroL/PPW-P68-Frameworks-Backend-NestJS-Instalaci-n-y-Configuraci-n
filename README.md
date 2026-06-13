@@ -44,7 +44,7 @@ http://localhost:3000
 
 ---
 
-## 🧩 Endpoint implementado
+## Endpoint implementado
 
 Se creó un módulo y controlador llamados **status**, que expone el siguiente endpoint:
 
@@ -54,7 +54,7 @@ GET /api/status
 
 ---
 
-## 🗂️ Estructura del proyecto
+## Estructura del proyecto
 
 ```
 fundamentosnestjs01/
@@ -73,7 +73,7 @@ fundamentosnestjs01/
 
 ---
 
-## 📸 Evidencias
+## Evidencias
 
 ### 1. Verificación de versiones (Node y pnpm)
 ![Verificación de versiones](assets/01-node-pnpm-version.png)
@@ -89,7 +89,7 @@ fundamentosnestjs01/
 
 ---
 
-## 🧠 Explicación de los decoradores utilizados
+### Explicación de los decoradores utilizados
 
 ### `@Controller('api/status')`
 Define una clase como **controlador**, es decir, la encargada de manejar las solicitudes HTTP. El texto entre paréntesis establece el **prefijo de ruta** para todos los endpoints dentro de la clase, en este caso `/api/status`.
@@ -111,22 +111,3 @@ Al ejecutar `pnpm start`, NestJS:
 3. Resuelve las rutas declaradas en los controladores.
 4. Levanta el servidor HTTP (por defecto en el puerto `3000`).
 
----
-
-## ☕ Similitudes con Spring Boot
-
-| NestJS | Spring Boot | Función |
-|---|---|---|
-| `@Controller()` | `@RestController` | Define una clase como controlador HTTP |
-| `@Get()`, `@Post()` | `@GetMapping`, `@PostMapping` | Mapean métodos HTTP a rutas |
-| `@Module()` | `@SpringBootApplication` / módulos | Agrupan componentes de la aplicación |
-| Inyección de dependencias | Inyección de dependencias (IoC) | Gestión automática de instancias |
-| Arquitectura modular | Arquitectura por capas | Organización escalable del código |
-
-Ambos frameworks comparten una filosofía similar: uso de **decoradores/anotaciones**, **inyección de dependencias** y una **arquitectura modular** que separa responsabilidades entre controladores, servicios y módulos.
-
----
-
-## ✅ Conclusión
-
-Con esta práctica se logró instalar y configurar correctamente el entorno de desarrollo para NestJS, generar un proyecto base mediante el CLI, y crear un primer endpoint funcional (`/api/status`) siguiendo la arquitectura modular propia del framework.
