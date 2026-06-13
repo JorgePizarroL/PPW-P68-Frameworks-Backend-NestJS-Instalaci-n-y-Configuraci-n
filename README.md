@@ -102,7 +102,7 @@ Define un **módulo**, la unidad básica de organización en NestJS. Cada módul
 
 ---
 
-## 🔄 Funcionamiento del servidor NestJS
+## Funcionamiento del servidor NestJS
 
 Al ejecutar `pnpm start`, NestJS:
 
