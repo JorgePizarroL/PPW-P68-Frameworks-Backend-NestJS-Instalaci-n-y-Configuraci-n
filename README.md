@@ -111,3 +111,6 @@ Al ejecutar `pnpm start`, NestJS:
 3. Resuelve las rutas declaradas en los controladores.
 4. Levanta el servidor HTTP (por defecto en el puerto `3000`).
 
+## Similitud con Spring Boot
+
+NestJS comparte varias ideas con Spring Boot: ambos usan **decoradores/anotaciones** para definir controladores y rutas (`@Controller` ↔ `@RestController`, `@Get` ↔ `@GetMapping`), aplican **inyección de dependencias** para gestionar los servicios automáticamente, y organizan el código en una **arquitectura modular**, separando controladores, servicios y módulos.
